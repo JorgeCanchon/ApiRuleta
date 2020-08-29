@@ -1,5 +1,5 @@
-﻿using ApiRuleta.Core.UseCases.Roulette;
-using Autofac;
+﻿using Autofac;
+using ApiRuleta.Core.UseCases.Roulette;
 
 namespace ApiRuleta.Core
 {

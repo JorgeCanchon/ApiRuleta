@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ApiRuleta.Core.Models;
 
 namespace ApiRuleta.Core.UseCases.Roulette
 {
-    public class IRouletteInteractor
+    public interface IRouletteInteractor
     {
+        Response InsertRoulette(Models.Roulette roulette);
     }
 }
