@@ -1,9 +1,6 @@
-﻿using ApiRuleta.Infraestructure.Data.EntityFrameworkPostgreSQL;
+﻿using Autofac;
 using ApiRuleta.Core.Interfaces.Repositories;
-using Autofac;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using ApiRuleta.Infraestructure.Data.EntityFrameworkPostgreSQL;
 
 namespace ApiRuleta.Infraestructure
 {

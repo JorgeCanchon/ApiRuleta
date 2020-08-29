@@ -1,4 +1,5 @@
 ﻿using ApiRuleta.Core.Interfaces.Repositories;
+using ApiRuleta.Infraestructure.Data.EntityFrameworkPostgreSQL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;

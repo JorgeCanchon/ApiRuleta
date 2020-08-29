@@ -37,6 +37,8 @@ namespace ApiRuleta
 
             services.ConfigureMyPostgreSQLContext(Configuration);
 
+            services.ConfigureRepositoryWrapper();
+
             services.AddMvc();
 
             CultureInfo.CurrentCulture = new CultureInfo("es-ES");

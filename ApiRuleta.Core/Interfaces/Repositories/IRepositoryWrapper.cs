@@ -4,7 +4,9 @@ using System.Text;
 
 namespace ApiRuleta.Core.Interfaces.Repositories
 {
-    public class IRepositoryWrapper
+    public interface IRepositoryWrapper
     {
+        IRouletteRepository Roulette { get; }
+        void Save();
     }
 }
