@@ -20,10 +20,24 @@ namespace ApiRuleta.Controllers
             _rouletteInteractor = rouletteInteractor;
         }
 
-        [HttpGet("opening/{idroulette}")]
+        [HttpPost("opening/{idroulette}")]
         public IActionResult Post(long idroulette)
         {
-            return Ok();
+            Response response = _rouletteInteractor.OpeningRoulette(idroulette);
+
+            switch (response.Status)
+            {
+                case 200:
+                    return Ok(response);
+                case 400:
+                    return BadRequest(response);
+                case 404:
+                    return NotFound(response);
+                case 500:
+                    return Problem(response.Message);
+                default:
+                    return Ok();
+            }
         }
 
         [HttpPost]

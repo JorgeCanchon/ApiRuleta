@@ -33,7 +33,9 @@ namespace ApiRuleta.Infraestructure.Data.EntityFrameworkPostgreSQL
 
                 modelBuilder.HasAnnotation("Sqlite:Autoincrement", true)
                    .HasAnnotation("Npgsql:ValueGenerationStrategy",
-                    Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.NpgsqlValueGenerationStrategy.IdentityAlwaysColumn);
+                    Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.NpgsqlValueGenerationStrategy.IdentityAlwaysColumn)
+                   .HasAnnotation("Npgsql:ValueGenerationStrategy",
+                    Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.NpgsqlValueGenerationStrategy.SerialColumn);
             }
         }
     }
